@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IB Science Classroom - Quality Resources for IB Educators</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="/ibscienceclassroom/public/images/IB-SC_logo.png" alt="IB Science Classroom Logo" class="logo">
+                <h1>IB Science Classroom</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="cart-icon"><a href="#cart"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Inquire. Teach. Empower.</h2>
+            <p>Premium educational resources for IB Science educators</p>
+            <a href="#resources" class="btn">Explore Resources</a>
+        </div>
+    </section>
+
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2>Featured Resources</h2>
+            <div class="resource-grid">
+                <!-- Resource 1 -->
+                <div class="resource-card">
+                    <div class="resource-preview">
+                        <img src="https://via.placeholder.com/300x200" alt="Resource Preview">
+                        <a href="#" class="preview-btn">Preview</a>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Biology Topic 1</h3>
+                        <p class="resource-description">Complete lesson plans and activities for IB Biology Topic 1.</p>
+                        <p class="resource-price">$9.99</p>
+                        <button class="add-to-cart" data-id="1" data-name="Biology Topic 1" data-price="9.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="resource-card">
+                    <div class="resource-preview">
+                        <img src="https://via.placeholder.com/300x200" alt="Resource Preview">
+                        <a href="#" class="preview-btn">Preview</a>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Chemistry Topic 2</h3>
+                        <p class="resource-description">Interactive worksheets and lab ideas for IB Chemistry.</p>
+                        <p class="resource-price">$5.99</p>
+                        <button class="add-to-cart" data-id="2" data-name="Chemistry Topic 2" data-price="5.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Resource 3 -->
+                <div class="resource-card">
+                    <div class="resource-preview">
+                        <img src="https://via.placeholder.com/300x200" alt="Resource Preview">
+                        <a href="#" class="preview-btn">Preview</a>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Physics Topic 3</h3>
+                        <p class="resource-description">Detailed explanations and problem sets for IB Physics.</p>
+                        <p class="resource-price">$14.99</p>
+                        <button class="add-to-cart" data-id="3" data-name="Physics Topic 3" data-price="14.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total">0.00</span></p>
+            </div>
+            <div id="paypal-button-container"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About IB Science Classroom</h2>
+            <p>We provide high-quality, curriculum-aligned resources for International Baccalaureate Science educators. Our materials are created by experienced IB teachers and designed to save you time while enhancing student learning.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 IB Science Classroom. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AdZIHt49zQkdOt46KoHnzz3e9cpICMDzBop6AQ_89NdlG9OWJ8YVoe0rxO6d09bmXbwjFzYrZB_bgHlL&currency=USD"></script>
+    <script src="script.js"></script>
+</body>
+</html>
